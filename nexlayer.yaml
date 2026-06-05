@@ -1,0 +1,15 @@
+application:
+  name: slim-reef-social-analyzer
+  pods:
+    - name: app
+      image: "# filled by pipeline"
+      path: /
+      servicePorts:
+        - 9005
+      vars:
+        - key: NODE_ENV
+          value: production
+        - key: PORT
+          value: "9005"
+        - key: HOSTNAME
+          value: "0.0.0.0"
